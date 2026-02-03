@@ -10,6 +10,9 @@
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio"
   },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.4"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
