@@ -1,14 +1,16 @@
 import express from 'express';
+import matchRouter from './routes/matches.js';
 
 const app = express();
 const PORT = 8000;
 
 app.use(express.json());
+app.use('/matches', matchRouter);
 
 app.get('/', (req, res) => {
-  res.send('Hello from Sportz Server!');
+    res.send('Hello from Sportz Server!');
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
